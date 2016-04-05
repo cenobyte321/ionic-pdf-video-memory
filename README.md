@@ -19,5 +19,3 @@ window.setTimeout(function(){
 },5000);
 }, 10000);
 ```
-
-
