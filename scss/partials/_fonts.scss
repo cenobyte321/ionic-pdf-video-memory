@@ -1,0 +1,50 @@
+
+
+@font-face {
+    font-family: 'ebj-icons';
+    src:    url('../fonts/ebj-icons.eot?jdjxtj');
+    src:    url('../fonts/ebj-icons.eot?jdjxtj#iefix') format('embedded-opentype'),
+        url('../fonts/ebj-icons.ttf?jdjxtj') format('truetype'),
+        url('../fonts/ebj-icons.woff?jdjxtj') format('woff'),
+        url('../fonts/ebj-icons.svg?jdjxtj#ebj-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ui-icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'ebj-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ui-icon_atras:before {
+    content: "\e900";
+}
+.ui-icon_hide{
+	&:before {
+    	content: "\e901";
+	}
+}
+.ui-icon_setup:before {
+    content: "\e902";
+}
+.ui-icon_show{
+	&:before {
+    	content: "\e903";
+	}
+}
+.ui-icon_video:before {
+    content: "\e904";
+}
+.ui-icon_recetario:before {
+    content: "\e905";
+}

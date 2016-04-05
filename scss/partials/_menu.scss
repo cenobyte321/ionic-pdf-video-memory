@@ -1,0 +1,76 @@
+
+//Menu
+
+.platform-ios {
+	.scroll-content.ionic-scroll.has-header, .scroll-content.ionic-scroll.vertical-center.has-header{
+		top: 82px + 20px;
+	}
+	ion-header-bar.bar.bar-header{
+		height: 82px + 20px !important;
+		padding: 9px;
+		.title{
+			//height: 82px + 20px;
+
+		}
+ 
+	}
+	.btn-content{
+		 
+		 height: calc(100% - 102px) !important;
+	}
+}
+
+
+
+
+.scroll-content.ionic-scroll.has-header, .scroll-content.ionic-scroll.vertical-center.has-header{
+	top: 82px;
+}
+
+ion-header-bar.bar.bar-header{
+	height: 82px;
+	padding: 9px;
+	.title{
+		height: 82px;
+		& + .buttons{
+			top:0;
+			bottom:0;
+			right:0;
+		}
+	}
+	.button-icon.button{
+		   border-radius: 0px;
+		font-size: 14px;
+		padding: 0 15px;
+		transition: all 0.2s;
+		&:before{
+			display: block;
+			font-size: 46px;
+    		margin: 5px 0 -5px 0;
+
+		}
+		&.active{
+			background: $gray;
+			color: white;
+			opacity: 1;
+		}
+		&.activated{
+			background: rgba($gray, 0.1);
+			opacity: 1;
+		}
+		&.active.activated{
+			background: $gray;
+			color: white;
+			opacity: 1;
+		}
+	}
+	-webkit-box-shadow: 0px 6px 18px 0px rgba(100,100,100,0.05);
+	-moz-box-shadow: 0px 6px 18px 0px rgba(100,100,100,0.05);
+	box-shadow: 0px 6px 18px 0px rgba(100,100,100,0.05);
+}
+
+
+
+.scroll-content.vertical-center.has-header{
+	top: 0px;
+}

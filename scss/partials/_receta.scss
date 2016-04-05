@@ -1,0 +1,147 @@
+
+.anim{
+	transition: all 0.4s;
+}
+
+.videos-content{
+	right:0;
+	left: initial;
+	width:100%;
+ 
+	overflow:visible;
+	padding:10px;
+	h3{
+		text-transform: uppercase;
+		 
+	}
+	.videos{
+		position: relative;
+		 
+	}
+	.item{
+		overflow: visible;
+    	text-overflow: initial;
+    	white-space: initial;
+	}
+}
+
+.btn-content{
+	right: 20.5%;
+    left: 75.5%;
+    width: 5% !important;
+ 	padding:0;
+	height: calc(100% - 82px) !important;
+}
+.hide-btn{
+	height: 34px;
+	color: $gray;
+ 	font-size: 50px;
+ 	line-height: 100%;
+ 	text-align: center;
+ 	height: initial;
+ 	padding: 6px 0 0 0;
+ 	.show-hide{
+		@extend .ui-icon_hide;
+		
+	}
+}
+
+.receta{
+	padding:10px 0 10px 10px;
+	.recipe-wrapper{
+		background: white;
+	}
+}
+
+.receta-content{
+	padding:0px 0 10px 10px;
+	margin-top: 10px;
+	.recipe-wrapper{
+ 		canvas{
+			transition: all 1s;
+			width: 100%;
+		}	
+	}
+	.scroll{
+		    background: white;
+	}
+}
+.receta-header-content{
+	min-height: 87px;
+	bottom: initial;
+	.recipe-header{
+		border-bottom: 1px solid $gray2;
+		position: relative;
+		.back-btn{
+			position: absolute;
+			left: 0;
+			top:0;
+			background: $orange;
+			height: 100%;
+			width: 55px;
+			font-size: 3rem;
+			text-align: center;
+			line-height: 100%;
+			border-radius:0;
+			display: flex;
+  			align-items: center;
+  			justify-content: center;
+  			padding:0;
+			&:before{
+				color: white;
+    			display: inline-block;
+    			
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				top:0;
+				left:0;
+				width: 100%;
+				height: 100%;
+				@include gradient-gray(1);
+				opacity: 0.1;
+				transition: all 0.2s;
+			}
+			&.activated{
+				&:after{
+					opacity: 0.2; 
+				}
+			}
+		}
+		.recipe-title{
+			display: block;
+			padding: 10px 10px 10px 70px;
+			h1{
+				margin:0;
+				font-size:30px;
+				line-height: 1;
+				margin-bottom: 0.4rem;
+			}
+			.category{
+				margin:0;
+				text-transform: uppercase;
+				color:$gray;
+			}
+		}
+	}
+}
+
+
+.pane.hide-videos{
+	.videos-content{
+		right: calc(-20%);
+	}
+	.hide-btn{
+		.show-hide{
+			@extend .ui-icon_show;
+		}
+	}
+	.receta-content, .receta-header-content{
+		max-width:calc(100% - 55px);
+	}
+	.btn-content{
+		right: 0;
+	    left: 95%;
+	}
+}

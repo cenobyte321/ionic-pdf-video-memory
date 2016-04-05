@@ -1,0 +1,77 @@
+
+body, h1, h2, h3, h4, h5, h6, p, span, button, a, div{
+	font-family: 'Lato', sans-serif;
+}
+
+.pane{
+	background: $blue-light;
+}
+ 
+.vertical-center{
+	top:0;
+  	display: table !important;
+  	width: 100vw ;
+  	height: 100% ;
+
+	.scroll {
+	  display: table-cell;
+	  vertical-align: middle;
+	  text-align: center;
+	  width: 100vw;
+	}
+}
+ 
+
+.vertical{
+	&.login-content, &.config-content{
+		top:0;
+	  	 
+	  	width: 100% !important;
+	  	height: 100% !important;
+
+		.scroll {
+		  
+		  text-align: center;
+		  .padding{
+		  	padding-top: calc(50vh - 154px);
+		  }
+		}
+	}
+}
+
+.btns{
+	&:first-child{
+		button{
+			border-top-right-radius: 0;
+    		border-bottom-right-radius: 0;
+    		background: $blue;
+    	}
+    	
+	}
+	&:last-child{
+		button{
+			border-top-left-radius: 0;
+    		border-bottom-left-radius: 0;
+    	}
+	}
+}
+
+// Estilos Básicos Fer
+.pdf-viewer canvas{
+	width: 100%;
+}
+ 
+.transparent {
+    background: transparent !important;
+}
+ 
+.centerme {
+    margin: 0 auto;
+    width: 100%;
+    height:100%;
+}
+
+button{
+	text-transform: uppercase;
+	@include gradient-gray;
+}

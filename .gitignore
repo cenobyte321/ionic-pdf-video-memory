@@ -1,0 +1,54 @@
+.tmp
+.sass-cache
+coverage
+*.swp
+*.swo
+*.log
+*.DS_Store
+*.mp4
+
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+# OSX
+.DS_Store
+.DS_Store?
+
+
+
+# Android
+platforms/android/CordovaLib/bin/**
+platforms/android/gen/**
+platforms/android/CordovaLib/gen/**
+platforms/android/bin/**
+platforms/android/ant-build/**
+
+
+# IOS / Xcode
+platforms/ios/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+node_modules/
+platforms/
+plugins/

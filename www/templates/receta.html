@@ -1,0 +1,62 @@
+
+<ion-view view-title="Receta" class="{{(receta.maximizar?' hide-videos ':'')}}">  <!-- A esta etiqueta .pane ponerle la clase .hide-videos cuando se quiera ocultar el sidebar de videos -->
+
+	<!-- poner style=" margin-top: XXpx" a .receta-content con el height de .recipe-header-->
+
+
+
+	<ion-content scroll="true"  has-bouncing="false" class="col col-75 receta receta-content anim" style="">
+
+
+		<div id="recetaContent" class="recipe-content-wrapper">
+			<!--<ng-pdf template-url="partials/viewer.html" canvasid="pdf" scale="page-fit">
+			</ng-pdf>-->
+			<pdf-viewer
+		    delegate-handle="my-pdf-container"
+		    url="receta.pdfUrl"
+		    scale="1"
+		    show-toolbar="false"
+		    show-all-pages="true"
+		    class="pdf-viewer">
+		</pdf-viewer>
+		</div>
+
+  	</ion-content>
+
+  	<ion-content scroll="false" has-bouncing="false" class="col col-75 receta receta-header-content anim">
+  		<div class="recipe-wrapper">
+				<div id="recipeHeader" class="recipe-header">
+			  		<span class="back-btn ui-icon ui-icon_atras button"   ui-sref="recetario"></span>
+			  		<span class="recipe-title">
+			  			<h1 >{{receta.name}}</h1>
+			  		</span>
+			  	</div>
+		</div>
+	</ion-content>
+  	<ion-content scroll="false" has-bouncing="false" class="col btn-content vertical-center anim">
+
+			  <div class="hide-btn scroll" href="" ng-click="toogleMaximizar()">
+
+					<span class="ui-icon show-hide"></span>
+				</div>
+
+  	</ion-content>
+  	<ion-content scroll="true" class="col col-20 videos-content anim">
+
+		  	<h3>Videos</h3>
+
+			<div class="videos">
+
+			  	<ul class="list">
+			  		<ion-item collection-repeat="video in receta.videos" ng-click="goFullscreen($event)">
+				    	<div data-tap-diable="true">
+				    		<video ng-src="{{video.url| trustUrl}}" preload="none" class="centerme disable-pointer-events"  webkit-playsinline></video>
+				    	</div>
+				    	{{video.nombre}}
+				    </ion-item>
+				</ul>
+		 	</div>
+
+	</ion-content>
+
+</ion-view>
