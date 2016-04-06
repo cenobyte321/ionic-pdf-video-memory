@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('ebjsts', ['ionic','pdf','config','ngCordova'])
+angular.module('ebjsts', ['ionic','config','ngCordova'])
 
 .run(function($ionicPlatform, $rootScope, $state) {
   $ionicPlatform.ready(function() {
@@ -21,7 +21,7 @@ angular.module('ebjsts', ['ionic','pdf','config','ngCordova'])
       StatusBar.styleDefault();
     }
 
-    
+
 
   });
 

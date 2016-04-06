@@ -1,5 +1,5 @@
 angular.module('ebjsts')
-.controller('RecetaCtrl', function($scope, $timeout, $stateParams,$ionicLoading,$ionicModal,pdfDelegate, $http,ENV,$state,$rootScope) {
+.controller('RecetaCtrl', function($scope, $timeout, $stateParams,$ionicLoading,$ionicModal, $http,$state,$rootScope) {
 	$scope.receta = {
 		id: $stateParams.recetaId,
 		name: "Item",
