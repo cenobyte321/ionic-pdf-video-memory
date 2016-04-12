@@ -33,30 +33,6 @@
 			  	</div>
 		</div>
 	</ion-content>
-  	<ion-content scroll="false" has-bouncing="false" class="col btn-content vertical-center anim">
 
-			  <div class="hide-btn scroll" href="" ng-click="toogleMaximizar()">
-
-					<span class="ui-icon show-hide"></span>
-				</div>
-
-  	</ion-content>
-  	<ion-content scroll="true" class="col col-20 videos-content anim">
-
-		  	<h3>Videos</h3>
-
-			<div class="videos">
-
-			  	<ul class="list">
-			  		<ion-item collection-repeat="video in receta.videos" ng-click="goFullscreen($event)">
-				    	<div data-tap-diable="true">
-				    		<video ng-src="{{video.url| trustUrl}}" preload="none" class="centerme disable-pointer-events"  webkit-playsinline></video>
-				    	</div>
-				    	{{video.nombre}}
-				    </ion-item>
-				</ul>
-		 	</div>
-
-	</ion-content>
 
 </ion-view>
